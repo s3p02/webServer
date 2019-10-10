@@ -25,3 +25,4 @@ https://www.afternerd.com/blog/python-http-server/
 #DOCKER
 ```docker build -t webserver-py3 .```
 ```docker run -p 38080:38080 webserver-py3```
+--silent ```docker run -d -p 38080:38080 webserver-py3```
