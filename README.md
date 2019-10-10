@@ -14,9 +14,10 @@ which python3
 ```
 
 #VIRTUALENV
-```virtualenv -p /usr/bin/python2.7 venv```
+```virtualenv -p /bin/python3 venv```
 
 ```source venv/bin/activate```
 
 #RUN
+```bash prep.sh```
 ```python server.py```
