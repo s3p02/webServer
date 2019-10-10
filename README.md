@@ -2,22 +2,22 @@
 
 https://www.afternerd.com/blog/python-http-server/
 
+#GIT
+``````sudo yum -y install git``````
+
+#CLONE
+``` git clone https://github.com/s3p02/webServer.git```
+```cd webserver```
 #PYTHON3
-```
-sudo yum -y install yum-utils
-sudo yum -y groupinstall development
-sudo yum -y install https://centos7.iuscommunity.org/ius-release.rpm
-sudo yum -y install python36u
-python3.6 -V
-sudo yum -y install python36u-devel
-which python3
-```
+
+```chmod a+x prep.sh```
+```bash prep.sh```
 
 #VIRTUALENV
-```virtualenv -p /bin/python3 venv```
+```virtualenv -p /usr/bin/python3 venv```
 
 ```source venv/bin/activate```
 
 #RUN
-```bash prep.sh```
+
 ```python server.py```

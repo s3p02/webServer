@@ -6,4 +6,5 @@ sudo yum -y install https://centos7.iuscommunity.org/ius-release.rpm
 sudo yum -y install python36u
 python3.6 -V
 sudo yum -y install python36u-devel
+sudo pip3 install virtualenv
 which python3
