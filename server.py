@@ -5,8 +5,8 @@ import logging
 import sys
 
 def runServer():
-    configsPath = '/Users/sharan_sreesai/Documents/webServer/'
-    serverConfigs = (row for row in open(configsPath+'configs.yaml'))
+    #configsPath = '/Users/sharan_sreesai/Documents/webServer/'
+    serverConfigs = (row for row in open('configs.yaml'))#configsPath+'configs.yaml'))
     PORT = int(list(serverConfigs)[0].split("webServerPort :")[1])
     Handler = http.server.SimpleHTTPRequestHandler
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
